@@ -1,0 +1,82 @@
+:root {
+    /* Fonts */
+    --primary-font: system-ui;
+    --font-size-big: 2rem;
+    --font-size-normal: 1rem;
+    --font-size-lil: 0.7rem;
+
+    /* Colors */
+    --color-bg: #070707;
+    --color-bg-nav: rgb(51, 22, 22);
+    --color-bg-anycontent: #404040;
+    --color-bg-card: #473737;
+    --color-bg-info: #473737;
+    
+    /* Colors Text */
+    --color-primary-text: white;
+    --color-secondary-text: grey;
+    --color-inactive-text: lightgrey;
+    --color-info-text: rgb(148, 201, 148);
+    --color-placeholder-text: brown;
+
+    /* Radius / main spaces */
+    --main-padding: 10px;
+    --in-padding: 7px;
+
+    --in-bradius: 4px
+    --border-radius: calc(var(var(--in-radius)+var(var(--in-padding))));
+
+    /* misc */
+    --transition: any 0.4s;
+    --shadow: 0px 0px 5px rgb(196, 196, 221);
+}
+
+body {
+    min-height: 1000px;
+
+    line-height: 1.6em;
+
+    background-color: var(--color-bg);
+    color: var(--color-placeholder-text)
+}
+.nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background-color: var(--color-bg-nav);
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.nav-logo {
+    justify-self: flex-start;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+h1 {
+    color: var(--color-primary-text)
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    padding: var(--in-padding);
+    margin: 10px;
+
+    color: var(--color-inactive-text);
+    background-color: var(--color-bg-info);
+    border-radius: var(--in-bradius);
+    transition: var(--transition);
+}
+a:hover {
+    color: var(--color-secondary-text);
+    box-shadow: var(--shadow);
+}

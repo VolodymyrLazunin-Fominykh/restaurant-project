@@ -1,0 +1,133 @@
+:root {  /* It's a way to put variables and they can be accessed EVERYWHERE -> Easier to have full working sites */
+    /* Colors */
+    --primary: #8B1A1A;
+    /* Deep red - restaurant feel */
+    --primary-dark: #6b1313;
+    --primary-light: #c44242;
+    --accent: #D4AF37;
+    /* Gold accent */
+    --accent-dark: #b8962e;
+    --text-dark: #2c2c2c;
+    --text-medium: #555555;
+    --text-light: #888888;
+    --bg-white: #ffffff;
+    --bg-cream: #FFF8F0;
+    --bg-dark: #1a0a0a;
+    --border: #e8e0d5;
+
+    /* Typography */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Lato', Arial, sans-serif;
+
+    /* Sizing */
+    --max-width: 1200px;
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 16px;
+
+    /* Spacing */
+    --space-xs: 8px;
+    --space-sm: 15px;
+    --space-md: 25px;
+    --space-lg: 50px;
+    --space-xl: 80px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.2);
+
+    /* Transitions */
+    --transition-fast: all 0.2s ease;
+    --transition: all 0.3s ease;
+    --transition-slow: all 0.5s ease;
+} /* I already knew about it because i tried it in my portfolio ( watchout my github to see it.)  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    color: var(--text-dark);
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+}
+
+h3 {
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+
+p {
+    margin-bottom: var(--space-sm);
+    color: var(--text-medium);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    text-align: center;
+    margin-bottom: var(--space-md);
+    color: var(--text-dark);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: var(--space-lg);
+    font-size: 1.1rem;
+}
+
+.accent-line {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    margin: 15px auto;
+}
