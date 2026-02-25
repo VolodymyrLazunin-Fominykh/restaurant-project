@@ -1,6 +1,7 @@
 /* Nav Bar */
 .navbar {
-    background-color: var(--bg-dark);
+    background: rgba(26, 10, 10,0.8);
+    backdrop-filter: blur(4px);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -9,17 +10,20 @@
 
 .navbar-container {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
+
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0 var(--space-md);
-    height: 70px;
+    padding: var(--space-sm) var(--space-md);
+    min-height: 70px;
 }
 
 .navbar-brand {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 .navbar-brand .brand-name {
@@ -39,6 +43,7 @@
 
 .navbar-links {
     display: flex;
+    flex-flow: row wrap;
     list-style: none;
     gap: 5px;
 }
