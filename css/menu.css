@@ -1,0 +1,135 @@
+/* Page Banner */
+
+.page-banner {
+    background: linear-gradient(135deg, var(--bg-dark), var(--primary-dark));
+    color: white;
+    padding: var(--space-lg) 0;
+    text-align: center;
+}
+
+.page-banner h1 {
+    color: var(--accent);
+    font-style: italic;
+    margin-bottom: 10px
+}
+
+.page-banner p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
+
+/* Menu Page */
+
+.menu-page {
+    padding: var(--space-lg) 0;
+    background: var(--bg-cream);
+}
+
+.menu-section {
+    margin-bottom: var(--space-xl);
+}
+
+.menu-section-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.menu-section-header h2 {
+    font-style: italic;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.menu-section-en {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+/* Menu Grid */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(280px,1fr));
+    gap: var(--space-md);
+}
+
+.menu-item {
+    background-color: var(--bg-white);
+    padding: var(--space-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-left: 4px solid transparent;
+}
+
+.menu-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+    border-left-color: var(--accent);
+}
+
+.menu-item .featured {
+    border-left-color: var(--primary);
+}
+
+.menu-item-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    gap: 10px;
+}
+
+.menu-item-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--text-dark);
+    font-style: italic;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    white-space: nowrap; /* Text doesnt change size -> numbers dont fall down*/
+}
+
+.menu-item p {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.menu-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 0.72rem;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.tag.vegetarian {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.tag.chef-special {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.tag.spicy {
+    background-color: #f8d7da;
+    color: #721c24;
+}

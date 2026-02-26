@@ -39,6 +39,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-/*Use in CSS*/
-font-family: 'Playfair Display', serif;
-font-family: 'Lato', sans-serif;
+# Day 10 Notes - Multi-Page Sites
+
+## File Path Examples
+<!-- From root (index.html): -->
+<a href="pages/menu.html">Menu</a>
+
+<!-- From inside pages/ folder: -->
+<a href="../index.html">Home</a>
+<a href="about.html">About</a>  (same folder)
+
+## Active Navigation State
+Add class="active" to current page's nav link
+
+## Shared Components Pattern
+Copy navigation HTML to each page (for now)
+Later we'll learn JavaScript to load it dynamically
+
+## Menu Page Layout Plan
+- Section 1: Hero banner (small)
+- Section 2: Appetizers grid
+- Section 3: Pasta & Main courses
+- Section 4: Desserts
+- Section 5: Drinks
+Each section has title + menu items in grid

@@ -1,47 +1,204 @@
-<!DOCTYPE html>
+<!-- @format -->
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Bella Cucina - Authentic Italian Restaurant</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/components.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - La Bella Cucina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="../index.html" class="navbar-brand" style="text-decoration:none">
-                <span class="brand-name">La Bella Cucina</span>
-                <span class="brand-tagline">Authentic Italian</span>
-            </a>
-            <ul class="navbar-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="pages/menu.html">Menu</a></li>
-                <li><a href="pages/about.html">Our Story</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-                <li><a href="pages/contact.html" class="navbar-cta">Reserve a Table</a></li>
-            </ul>
-        </div>
-    </nav>
-    <header>
-        <h1>La Bella Cucina</h1>
-        <p>Our Menu</p>
-    </header>
+  <!-- Navigation (same as index.html but with different active link) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a
+        href="../index.html"
+        class="navbar-brand"
+        style="text-decoration: none"
+      >
+        <span class="brand-name">La Bella Cucina</span>
+        <span class="brand-tagline">Authentic Italian</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="navbar-cta">Reserve a Table</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <main>
-        <p>Page content coming soon...</p>
-    </main>
+  <section class="page-banner">
+    <div class="conatiner">
+        <h1>Our Menu</h1>
+        <p>Crafted with love, served with passion</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 La Bella Cucina. All rights reserved.</p>
-    </footer>
+  <main class="menu-page">
+    <div class="container">
+        <section class="menu-selection">
+            <div class="menu-section-header">
+                <h2>Antipasti</h2>
+                <span class="menu-section-en">Appetizers</span>
+                <span class="accent-line"></span>
+            </div>
+            <div class="menu-grid">
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Bruschetta al Pomodoro</h3>
+                        <span class="price">€8</span>
+                    </div>
+                    <p>Toasted sourdough with fresh tomatoes, basil, and extra virgin olive oil</p>
+                    <div class="menu-tags">
+                        <span class="tag vegetarian">🌿 Vegetarian</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Carpaccio di Manzo</h3>
+                        <span class="price">€14</span>
+                    </div>
+                    <p>Thinly sliced raw beef with arugula, Parmesan shavings, and truffle oil</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Burrata e Prosciutto</h3>
+                        <span class="price">€16</span>
+                    </div>
+                    <p>Creamy burrata cheese with San Daniele prosciutto and fig jam</p>
+                    <div class="menu-tags">
+                        <span class="tag vegetarian">🌿 Vegetarian</span>
+                    </div>
+                </div>
+
+                <div class="menu-item featured">
+                    <div class="menu-item-header">
+                        <h3>Frittura di Calamari</h3>
+                        <span class="price">€13</span>
+                    </div>
+                    <p>Golden fried calamari rings with lemon aioli and spicy marinara sauce</p>
+                    <div class="menu-tags">
+                        <span class="tag chef-special">⭐ Chef's Special</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Pasta -->
+         <section class="menu-section">
+            <div class="menu-section-header">
+                <h2>Pasta & Risotti</h2>
+                <span class="menu-section-en">Pasta & Risotto</span>
+                <span class="accent-line"></span>
+            </div>
+            <div class="menu-grid">
+                
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Spaghetti Carbonara</h3>
+                        <span class="price">€18</span>
+                    </div>
+                    <p>Spaghetti with guanciale, egg yolks, Pecorino Romano, and black pepper</p>
+                </div>
+
+                <div class="menu-item featured">
+                    <div class="menu-item-header">
+                        <h3>Tagliatelle al Ragù</h3>
+                        <span class="price">€20</span>
+                    </div>
+                    <p>Hand-rolled tagliatelle with slow-cooked Bolognese sauce (6 hours)</p>
+                    <div class="menu-tags">
+                        <span class="tag chef-special">
+                            ⭐ Chef's Special
+                        </span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Penne all'Arrabbiata</h3>
+                        <span class="price">€15</span>
+                    </div>
+                    <p>Penne pasta with spicy tomato sauce, garlic and fresh chili</p>
+                    <div class="menu-tags">
+                        <span class="tag vegetarian">
+                            🌿 Vegetarian
+                        </span>
+                        <span class="tag spicy">🌶️ Spicy</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Risotto ai Funghi Porcini</h3>
+                        <span class="price">€22</span>
+                    </div>
+                    <p>Creamy Arborio rice with wild porcini mushrooms and Parmigiano-Reggiano</p>
+                    <div class="menu-tags">
+                        <span class="tag vegetarian">
+                            🌿 Vegetarian
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+         </section>
+         
+
+         <!-- Desserts -->
+          <section class="menu-section">
+            <div class="menu-section-header">
+                <h2>Dolci</h2>
+                <span class="menu-section-en">Desserts</span>
+                <span class="accent-line"></span>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-header">
+                        <h3>Tiramisù Classico</h3>
+                        <span class="price">€9</span>
+                    </div>
+                    <p>Our signature Tiramisu with Savoiardi biscuits, mascarpone and expresso</p>
+                    <div class="menu-tags"><span class="tag chef-special">⭐ Chef's Special</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-header">
+                        <h3>Panna Cotta</h3>
+                        <span class="price">€8</span>
+                    </div>
+                    <p>Vanilla bean panna cotta with fresh berry coulis and mint</p>
+                    <div class="menu-tag"><span class="tag vegetarian">🌿 Vegetarian</span></div>
+                </div>
+
+            </div>
+          </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+        <p class="footer-brand">La Bella Cucina</p>
+        <p>123 Via Roma, London EC1A 1BB</p> <!-- Fake Adress -->
+        <p>📞 +44 20 1234 5678 | ✉️ hello@labellacucina.com</p>
+        <p class="footer-copy">&copy; 2026 La Bella Cucina. All rights reserved</p>
+    </div>
+  </footer>
 
 </body>
 </html>
