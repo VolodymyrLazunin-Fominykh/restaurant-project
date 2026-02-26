@@ -132,6 +132,30 @@ a:hover {
     margin: 15px auto
 }
 
+/* Footer part  */
+
+.site-footer {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+.site-footer .container{
+    padding: var(--space-sm);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+.site-footer .footer-brand {
+    justify-self: center;
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--accent);
+    letter-spacing: 1px;
+    line-height: 1.1;
+    
+}
+
+
 /* Animations ! */
 
 @keyframes fadeUp {
