@@ -131,6 +131,25 @@ a:hover {
     background-color: var(--accent);
     margin: 15px auto
 }
+/* Page Banner */
+
+.page-banner {
+    background: linear-gradient(135deg, var(--bg-dark), var(--primary-dark));
+    color: white;
+    padding: var(--space-lg) 0;
+    text-align: center;
+}
+
+.page-banner h1 {
+    color: var(--accent);
+    font-style: italic;
+    margin-bottom: 10px
+}
+
+.page-banner p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
 
 /* Footer part  */
 

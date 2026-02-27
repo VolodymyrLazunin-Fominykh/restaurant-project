@@ -1,0 +1,146 @@
+.story-section {
+    padding: var(--space-xl) 0;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+.story-year {
+    display: inline-block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent);
+    background-color: rgba(212, 175, 55, 0.1);
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.story-text h2 {
+    font-style: italic;
+    color: var(--primary);
+    margin-bottom: var(--space-sm);
+}
+
+.story-text p {
+    line-height: 1.9;
+    margin-bottom: var(--space-sm);
+}
+
+.story-image-placeholder {
+    background-color: var(--bg-cream);
+    border-radius: var(--border-radius-lg);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--border);
+    font-size: 4rem;
+}
+
+.story-image-placeholder p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* VALUES */
+.values-section {
+    padding: var(--space-xl) 0;
+    background-color: var(--bg-dark);
+}
+
+.values-section .section-title {
+    color: var(--accent);
+}
+
+.values-section .accent-line {
+    background-color: var(--primary);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.value-item {
+    text-align: center;
+    padding: var(--space-md);
+}
+
+.value-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgba(212, 175, 55, 0.2);
+    font-family: var(--font-heading);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.value-item h3 {
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+/* TESTIMONIALS */
+.testimonials-section {
+    padding: var(--space-xl) 0;
+    background-color: var(--bg-cream);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+.testimonial {
+    background-color: var(--bg-white);
+    padding: var(--space-lg) var(--space-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    font-style: normal;
+}
+
+/* Using ::before for decorative quote mark */
+.testimonial::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-family: var(--font-heading);
+    font-size: 5rem;
+    color: var(--accent);
+    opacity: 0.3;
+    line-height: 1;
+}
+
+.testimonial p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    font-style: italic;
+    color: var(--text-medium);
+    margin-bottom: var(--space-sm);
+}
+
+.testimonial cite {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-style: normal;
+}

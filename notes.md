@@ -63,3 +63,34 @@ Later we'll learn JavaScript to load it dynamically
 - Section 4: Desserts
 - Section 5: Drinks
 Each section has title + menu items in grid
+
+# Day 11 Notes - Pseudo-Elements
+
+## ::before and ::after
+These create fake elements inside other elements.
+Used for decorative effects, icons, overlays.
+
+h2::before {
+    content: "";             /* REQUIRED (can be empty) */
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: gold;
+    margin-bottom: 10px;
+}
+
+/* Decorative quote marks */
+blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    color: #ddd;
+    line-height: 0;
+}
+
+## object-fit for images
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;    /* Fill without stretching */
+    object-position: center top;  /* Where to focus */
+}
