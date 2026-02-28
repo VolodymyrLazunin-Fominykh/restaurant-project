@@ -13,6 +13,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
     <nav class="navbar">
@@ -30,21 +31,145 @@
             </ul>
         </div>
     </nav>
-    <header>
-        <h1>Contact Us</h1>
-        <p>We are always willing to know about You</p>
-    </header>
+    
+    <section class="page-banner">
+        <div class="container">
+            <h1>Reservations & Contact</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
 
-    <main>
-        <p>Page content coming soon...</p>
+    <main class="contact-page">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Reservation Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Reserve a Table</h2>
+                    <p>Fill in the form and we'll confirm your reservation within 2 hours.</p>
+
+                    <form class="reservation-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Marco" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Rossi" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="marco@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+44 7700 900000" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select a time</option>
+                                    <option>12:00 PM (Lunch)</option>
+                                    <option>12:30 PM</option>
+                                    <option>1:00 PM</option>
+                                    <option>1:30 PM</option>
+                                    <option>7:00 PM (Dinner)</option>
+                                    <option>7:30 PM</option>
+                                    <option>8:00 PM</option>
+                                    <option>8:30 PM</option>
+                                    <option>9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Number of Guests *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select</option>
+                                <option>1 Guest</option>
+                                <option>2 Guests</option>
+                                <option>3 Guests</option>
+                                <option>4 Guests</option>
+                                <option>5-6 Guests</option>
+                                <option>7-8 Guests</option>
+                                <option>Large party (9+)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="occasion">Special Occasion</label>
+                            <select id="occasion" name="occasion">
+                                <option value="">None</option>
+                                <option>Birthday</option>
+                                <option>Anniversary</option>
+                                <option>Business Dinner</option>
+                                <option>Proposal</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requests">Special Requests</label>
+                            <textarea id="requests" name="requests" rows="4" placeholder="Dietary requirements, allergies, seating preferences..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Request Reservation
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>📍 Find Us</h3>
+                        <p>123 Via Roma<br>Islington, London<br>EC1A 1BB</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>⏰ Opening Hours</h3>
+                        <table class="hours-table">
+                            <tr><td>Monday</td><td>Closed</td></tr>
+                            <tr><td>Tuesday-Friday</td><td>12pm - 3pm, 6pm - 11pm</td></tr>
+                            <tr><td>Saturday</td><td>12pm - 11pm</td></tr>
+                            <tr><td>Sunday</td><td>12pm - 9pm</td></tr>
+                        </table>
+                    </div>
+                    <div class="info-card">
+                        <h3>📞 Contact</h3>
+                        <p>Phone: <a href="tel:+442012345678">+44 20 1234 5678</a></p>
+                        <p>Email: <a href="mailto:hello@labellacucina.com">hello@labellacucina.com</a></p>
+                    </div>
+                    <div class="info-card social-card">
+                        <h3>🔗 Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">TripAdvisor</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <footer class="site-footer">
         <div class="container">
             <p class="footer-brand">La Bella Cucina</p>
-            <p>123 Via Roma, London EC1A 1BB</p> <!-- Fake Adress -->
+            <p>123 Via Roma, London EC1A 1BB</p>
             <p>📞 +44 20 1234 5678 | ✉️ hello@labellacucina.com</p>
-            <p class="footer-copy">&copy; 2026 La Bella Cucina. All rights reserved</p>
+            <p class="footer-copy">&copy; 2026 La Bella Cucina. All rights reserved.</p>
         </div>
     </footer>
 

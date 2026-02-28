@@ -151,27 +151,26 @@ a:hover {
     font-size: 1rem;
 }
 
-/* Footer part  */
-
+/* FOOTER */
 .site-footer {
     background-color: var(--bg-dark);
-    color: var(--text-light);
-}
-.site-footer .container{
-    padding: var(--space-sm);
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: var(--space-lg) 0;
 }
 
-.site-footer .footer-brand {
-    justify-self: center;
+.footer-brand {
     font-family: var(--font-heading);
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: var(--accent);
-    letter-spacing: 1px;
-    line-height: 1.1;
-    
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.footer-copy {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.3);
+    margin-top: var(--space-sm);
 }
 
 

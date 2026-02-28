@@ -1,0 +1,144 @@
+.contact-page {
+    padding: var(--space-xl) 0;
+    background-color: var(--bg-cream);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+}
+
+.contact-form-wrapper {
+    background-color: var(--bg-white);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-form-wrapper h2 {
+    font-style: italic;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.contact-form-wrapper>p {
+    color: var(--text-light);
+    margin-bottom: var(--space-md);
+    font-size: 0.9rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm);
+}
+
+.form-group {
+    margin-bottom: var(--space-sm);
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid var(--border);
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    background-color: #fafafa;
+    transition: var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: var(--bg-white);
+}
+
+.btn-full {
+    width: 100%;
+    text-align: center;
+}
+
+/* INFO CARDS */
+.info-card {
+    background-color: var(--bg-white);
+    padding: var(--space-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.info-card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.info-card p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.info-card a {
+    color: var(--primary);
+}
+
+.hours-table {
+    width: 100%;
+    font-size: 0.85rem;
+}
+
+.hours-table td {
+    padding: 4px 0;
+}
+
+.hours-table td:first-child {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.hours-table td:last-child {
+    color: var(--text-light);
+    text-align: right;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    background-color: var(--primary);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: var(--transition-fast);
+}
+
+.social-links a:hover {
+    background-color: var(--primary-dark);
+    text-decoration: none;
+    color: white;
+}
+
