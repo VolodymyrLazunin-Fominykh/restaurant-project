@@ -144,3 +144,18 @@
     color: var(--primary);
     font-style: normal;
 }
+
+/* responsive */
+@media (max-width: 768px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .story-image-placeholder {
+        height: 250px;
+    }
+}

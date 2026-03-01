@@ -1,3 +1,5 @@
+/* Contact Page */
+
 .contact-page {
     padding: var(--space-xl) 0;
     background-color: var(--bg-cream);
@@ -23,7 +25,7 @@
     margin-bottom: 8px;
 }
 
-.contact-form-wrapper>p {
+.contact-form-wrapper p {
     color: var(--text-light);
     margin-bottom: var(--space-md);
     font-size: 0.9rem;
@@ -31,7 +33,7 @@
 
 .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
     gap: var(--space-sm);
 }
 
@@ -142,3 +144,13 @@
     color: white;
 }
 
+/* Responsivness */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
